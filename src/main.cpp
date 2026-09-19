@@ -20,6 +20,8 @@ void print_on_screen(String text){
 
 bool detect_shake(float x, float y, float z){
   //Since I don't have it it's just what LLM suggested me, will adjust later on when I have it physically
+  //When I get it physically, I plan to train ML model on different gestures.
+  
   float accel_magnitude = sqrt(x*x + y*y + z*z);
   if(accel_magnitude>=18){
     return true;
